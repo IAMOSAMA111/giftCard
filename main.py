@@ -11,6 +11,6 @@ baseURL = 'https://gcdev.matas.dk'
 getCardSeriesNumberAPI = baseURL + f'/v1/series/listPagination?query={CardNumber}&start=0&limit=10'
 print(getCardSeriesNumberAPI)
 
-getCardSeriesNumberAPIResponse = requests.get(getCardSeriesNumberAPI, timeout=20)
+getCardSeriesNumberAPIResponse = requests.get(getCardSeriesNumberAPI, timeout=20, verify=False)
 print(getCardSeriesNumberAPIResponse)
 
